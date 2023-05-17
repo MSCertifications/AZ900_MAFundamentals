@@ -447,6 +447,9 @@ infrastructure scenarios that span multiple virtual networks but belong to the s
 
 ## Load Balancer
 
+Load Balancer distributes new **inbound flows** (traffic from the Internet or local network) that arrive on the **Load Balancer's frontend** (is the gatekeeper of all traffic to the VMs it manages) to **backend pool instances** (are the VMs that are receiving the traffic from the load balancer), according to **rules and health probes** (checks to ensure backend instance can receive the data).
+
+
 ## VPN Gateway
 
 ## Application Gateway
