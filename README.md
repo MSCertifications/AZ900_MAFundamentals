@@ -501,3 +501,10 @@ It is a distributed network of servers that can deliver web content close to use
 
 3) **Distribution**
 	Edge servers will serve requests closest to the user. Less traffic is then sent to the server hosting your application.
+
+## ExpressRoute
+
+If a company need their data to be both on-premises and on Azure, it has to be highly available, and it needs to be periodically migrated, then ExpressRoute is the must-have connection from the company to Azure.
+
+ExpressRoute doesn't go over the public internet, which means the seucirty of your data and infrastructure is better.
+We get a more reliable and faster connection that has lower latency than any standard internet connection.
