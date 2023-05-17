@@ -449,8 +449,27 @@ infrastructure scenarios that span multiple virtual networks but belong to the s
 
 Load Balancer distributes new **inbound flows** (traffic from the Internet or local network) that arrive on the **Load Balancer's frontend** (is the gatekeeper of all traffic to the VMs it manages) to **backend pool instances** (are the VMs that are receiving the traffic from the load balancer), according to **rules and health probes** (checks to ensure backend instance can receive the data).
 
-
 ## VPN Gateway
+
+A Virtual Network gateway is composed of two or more VMs that are deployed to a specific subnet we create, which is called the **gateway subnet**.
+A subnet is a dedicated part of a VNet that has a specific range of IP addresses it can use.
+
+A VPN Gateway is a specific type of virtual network gateway that is used to send encrypted traffic between an Azure virtual network and an on-premises location over the public internet.
+
+The three main components of a VPN gateway are:
+
+1) An Azure VNet with a VPN gateway attached: This gateway have its own public IP address.
+2) A secure connection called a **tunnel**, which has one of a number of encryption mechanisms.
+3) An on-premises network with a complementary gateway that can accept the encrypted data.
+
+All this is called a **Site-to-site connection**.
+
+Resuming:
+* VPN gateways are instrumental in a hybrid cloud architecture.
+	- A VPN gateway is a specific VNet Gateway. It consists of two or more dedicated VMs.
+	- VNet Gateway + "vpn" becomes a VPN Gateway.
+	- Sends encrypted data between Azure and on premises network.
+	- Azure Gateway Subnet, secure tunnel and on-premises gateway makes up a VPN Gateway scenario.
 
 ## Application Gateway
 
