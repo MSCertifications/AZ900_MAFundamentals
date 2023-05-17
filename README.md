@@ -473,5 +473,31 @@ Resuming:
 
 ## Application Gateway
 
-## Content delivery network
+What if we want to route the traffic based on other paramters than simply IP address and port number?
 
+With Application Gateway we can make routing decisions based on additional attributes of an HTTP request, such as URI path (is the web address for the request) or host headers (pieces of information that are sent with the request).
+
+**Benefits**
+1) **Scaling**
+	Scale the Application Gateway up or down based on the amount of traffic received.
+2) **Encryption**
+	Comply with any security polices. Disable or enable traffic encryption to the backend.
+3) **Zone redundancy**
+	Span multiple availability zones and improve fault resiliency.
+4) **Multi-site hosting**
+	Use the same application gateway for up to 100 websites.
+
+## Content delivery network (CDN)
+
+It is a distributed network of servers that can deliver web content close to users. It stores cached content on what is called **edge servers** in locations that are close to end users to minimize latency.
+
+**Benefits**
+
+1) **Better performance**
+	Improve the user experience and the performance of your applications.
+
+2) **Scaling**
+	Scale to suit any spikes in traffic, and also protect your main backend server instance from high loads.
+
+3) **Distribution**
+	Edge servers will serve requests closest to the user. Less traffic is then sent to the server hosting your application.
